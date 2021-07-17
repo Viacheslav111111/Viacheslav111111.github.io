@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: tomato;
+}
+.content{
+    /* display: flex;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+    max-width: 1000px;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.3); */
+
+}
+.lol{
+    display: block;
+    max-width: 100%;
+    height: 300px;
+    /* width: calc(50% - 10px); */
+    /* max-width: 480px;
+    height: calc(95vw / 2 / 16 * 9);
+    max-height: 265px;
+    background-color: rgb(68, 0, 255);
+    margin: 5px;
+    opacity: 0.80;
+    transition: 0.5s opacity 0.9s ease-in-out, transform 0.5s ease-out, box-shadow 0.3s ease-in;
+    /*filter: blur(5px);
+    /*filter: brightness(0.6);
+    filter: grayscale(50%);
+    filter: hue-rotate(180deg);
+    filter: invert(0);*/
+    /* filter: sepia(0); */ 
+}
+.lol + .lol{
+    margin: 5px 0;
+}
+.MegaBox{
+    column-count: 4;
+    column-gap: 5px;
+} 
+
+
+
+.item{
+    width: 100%;
+    height: 100%;
+}   
+
+.item1{
+    background: url(https://im0-tub-ru.yandex.net/i?id=f35bd8c93cb7165dba1d734ee6a50437&n=13);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item2{
+    background: url(https://avatars.mds.yandex.net/get-zen_doc/1585197/pub_5d9990f2d7859b00aef4c435_5d99a8e043863f00b19f92a6/scale_1200);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item3{
+    background: url(https://im0-tub-ru.yandex.net/i?id=59eb9885afd875421e3aa773fa856ec7&n=13);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item4{
+    background: url(./a.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+
+}
+.item5{
+    background: url(./b.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item6{
+    background: url(./c.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item7{
+    background: url(./d.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item8{
+    background: url(./15.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item9{
+    background: url(./16.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item10{
+    background: url(./17.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+
+}
+.item11{
+    background: url(./18.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.item12{
+    background: url(./19.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+@media all and (min-width: 1280px){
+    .lol:hover{
+        opacity: 1;
+        z-index: 10;
+        box-shadow: 0 0 200px 25px rgba(0, 0, 0, 0.822);
+        filter: sepia(100%);
+    }
+    .lol:nth-of-type(even):hover{
+        transform: scale(1.2) rotate(15deg);
+    }
+    .lol:nth-of-type(odd):hover{
+        transform: scale(1.2) rotate(-15deg);
+    }
+    .lol1{
+        filter:blur(5px)
+    }
+    .lol1:hover{
+        filter:blur(0px)
+    }
+    .lol2{
+        filter: brightness(0) ;
+    }
+    .lol2:hover{
+        filter:brightness(1);
+    }
+    .lol3{
+        filter: grayscale(50%)
+    }
+    .lol3:hover{
+        filter:grayscale(0%);
+    }
+    .lol4{
+        filter: hue-rotate(180deg);
+    }
+    .lol4:hover{
+        filter: hue-rotate(0deg);
+    }
+    .lol5{
+        filter: invert(0)
+    }
+    .lol5:hover{
+        filter: invert(35.9423%)
+    }
+    .lol6{
+        filter: invert(0)
+    }
+    .lol6:hover{
+        filter: invert(100%)
+    }
+    .lol7{
+        filter: invert(0)
+    }
+    .lol7:hover{
+        filter: invert(58%)
+    }
+    .lol8{
+        filter: invert(100%)
+    }
+    .lol8:hover{
+        filter: invert(0%)
+    }
+    .lol9{
+        filter: invert(0)
+    }
+    .lol9:hover{
+        filter: invert(85%)
+    }
+    .lol10{
+        filter: invert(0)
+    }
+    .lol10:hover{
+        filter: invert(300%)
+    }
+    .lol11{
+        filter: invert(50%)
+    }
+    .lol11:hover{
+        filter: invert(10%)
+    }
+    .lol12{
+        filter: invert(85%)
+    }
+    .lol12:hover{
+        filter: invert(0%)
+    }
+}
+@media all and (max-width: 1024px){
+    .MegaBox{
+        column-count: 2;
+    }
+@media all and (max-width: 768px){
+    .MegaBox{
+        column-count: 2;
+    }
+}
+@media all and (max-width: 500px){
+    .MegaBox{
+        column-count: 1;
+    }
+}
